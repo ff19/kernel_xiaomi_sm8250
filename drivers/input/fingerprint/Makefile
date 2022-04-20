@@ -6,5 +6,6 @@
 
 obj-$(CONFIG_FINGERPRINT_FPC_FOD)	+= fpc_fod/
 obj-$(CONFIG_FINGERPRINT_FPC_TEE)	+= fpc_tee/
+obj-$(CONFIG_FINGERPRINT_FPC_TEE_APOLLO)	+= fpc_tee_apollo/
 obj-$(CONFIG_FINGERPRINT_GOODIX)	+= goodix/
 obj-$(CONFIG_FINGERPRINT_GOODIX_FOD)	+= goodix_fod/
