@@ -12,7 +12,7 @@ clone:
 
 steps:
   - name: building
-    image: ubuntu:latest
+    image: azrim89/kernel:latest
     environment:
       CI_CHANNEL_ID:
         from_secret: ci_channel_id
@@ -20,7 +20,7 @@ steps:
         from_secret: bot_api_key
       PD_API_KEY:
         from_secret: pd_api_key
-      TYPE: "REL-2.0.1"
+      TYPE: "TEST-REL-2.0.1"
       DEVICE: alioth
       KBUILD_BUILD_USER: UtsavTheCunt
       KBUILD_BUILD_HOST: CuntsSpace
@@ -31,6 +31,6 @@ steps:
       - ./build-kernel --aosp-clang
     when:
       branch:
-        - android12-stable
+        - test
       event:
         - push
