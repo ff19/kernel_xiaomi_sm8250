@@ -32,12 +32,6 @@ steps:
   - name: building-apollo
     image: debian:stable-slim
     environment:
-      CI_CHANNEL_ID:
-        from_secret: ci_channel_id
-      BOT_API_KEY:
-        from_secret: bot_api_key
-      PD_API_KEY:
-        from_secret: pd_api_key
       TYPE: REL-7.1.0
       DEVICE: apollo
       KBUILD_BUILD_USER: UtsavTheCunt
