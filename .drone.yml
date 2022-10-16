@@ -42,7 +42,7 @@ steps:
       - ./setup-drone --aosp-clang
       - ./build-kernel --aosp-clang --lto
 
-# ---
+---
 # clone:
 #   depth: 1
 # kind: pipeline
